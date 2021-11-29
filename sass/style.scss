@@ -37,6 +37,12 @@ section {
     justify-content: flex-start;
 }
 
+h3 {
+    color: $font-color;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
 ul {
     list-style-type: none;
     padding: 0; 
@@ -48,7 +54,7 @@ a {
     text-transform: uppercase;
     padding: 0 0 0 10px; }
         a:hover {
-            color: $other-color;
+            color: $font-color;
             transition: .5s; 
 }
 
@@ -62,7 +68,6 @@ a {
     height: 100vh;
     background-attachment: fixed;
 }
-
 
 .navigation .nav {
     background: $main-color;
@@ -102,7 +107,7 @@ a {
 
 .header {
     border: 1px solid black;
-    min-height: 400px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,26 +131,47 @@ a {
     justify-content: center;
     align-items: center;
     line-height: 0;
+    font-style: italic;
 }
 
 .header__text-header h1 {
     color: $other-color;
 }
 
+.header__text-header-title {
+    font-size: 40px;
+    line-height: 0;
+}
+
 .header__button {
-    border: 1px solid white;
-    background: none;
-    border-radius: 25px;
+    border: 1px solid $font-color;
+    background: $font-color;
+    border-radius: 3px;
     color: white;
     padding: 10px;
     width: 200px;
-    margin-top: 40px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
     &:hover {
         background: $other-color;
         transition: .6s;
         cursor: pointer;
+        border-color: $other-color;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Menu burger */
 
@@ -163,7 +189,7 @@ a {
 
 .burger {
     position: fixed;
-    top: 16px;
+    top: 23px;
     right: 20px;
     font-size: 30px;
     line-height: 50px;
