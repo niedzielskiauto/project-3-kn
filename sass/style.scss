@@ -197,6 +197,9 @@ a {
     align-items: center;
     width: 33.3%;
     min-height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
 }
 
 @media (max-width: 646px) {
@@ -217,6 +220,7 @@ a {
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    margin-bottom: 15px;
 }
 
 .fas.fa-trash-alt, .fas.fa-tablet-alt, .fas.fa-shield-alt {
@@ -234,6 +238,100 @@ a {
     color: #3c3f42;
 }
 
+/* Portfolio */
+
+.portfolio {
+    width: 100%;
+    min-height: 700px;
+}
+
+.portfolio .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio__title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.portfolio__title > h1 {
+    font-size: 35px;
+}
+
+.portfolio__title > p{
+    color:#3c3f42;
+    font-style: italic;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio__content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+@media (max-width: 1013px) {
+    .portfolio__content-top {
+        flex-direction: column;
+    }
+}
+
+.portfolio__content-top-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33.3%;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 1013px) {
+    .portfolio__content-top-inner {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.portfolio__content-top-inner-img img {
+    object-fit: cover;
+    width: 320px;
+    height: 320px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1013px) {
+    .portfolio__content-top-inner-img img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+.portfolio__content-top-inner > :nth-child(2) {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.portfolio__content-top-inner > :nth-child(3) {
+    font-size: 13px;
+    line-height: 0;
+    color: #3c3f42;
+    margin-top: 0;
+    font-style: italic;
+}
 
 
 
